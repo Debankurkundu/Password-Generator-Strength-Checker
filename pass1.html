@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pass1.css">
+</head>
+
+<body>
+    <div class="box" id="leftbox">
+        <h1>Password Strength Checker</h1>  
+        <input type="text" name="" placeholder="Your Paaword Here" id="yourpassword">
+        <div id="btn" class="btn2" onclick="strengthPassword()">Check Strength</div>
+        <input type="text" name="" STYLE="color:#FFFF00" id="strengthmsg">
+    </div>
+    <div class="box" id="rightbox">
+
+
+        <h1>Random Password Generater</h1>
+        <input type="text" name="" placeholder="Create password" id="password" readonly>
+        <table>
+            <tr>
+                <td>
+                    <h2 class="ipbx">Specify the length</h2>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="number" name="" class="ipbxip" id="length"></th>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="ipbx">Special charcters to be included</h3>
+                </td>
+                <td><input type="number" name="" class="ipbxip" id="spln"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="ipbx">Capital letters to be included</h3>
+                </td>
+                <td><input type="number" name="" class="ipbxip" id="cpln"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="ipbx">Digits to be included</h3>
+                </td>
+                <td><input type="number" name="" class="ipbxip" id="dgln"></td>
+            </tr>
+        </table>
+        <table>
+            <th>
+                <div id="button" class="btn1" onclick="genPassword()">Generate</div>
+            </th>
+            <th><a id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+        </table>
+    </div>
+    <script src="pass1.js"></script>
+
+</body>
+
+</html>
